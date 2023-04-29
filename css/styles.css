@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav {
+    background-color: #343a40;
+    height: 70px;
+    width: 100% ;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #ffff;
+}
+
+.nav__logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo img {
+    width: 100%;
+    max-width: 90px;
+    height: 100%;
+    max-height: 90px;
+    object-fit: cover;
+}
+
+
+.nav__buttons p:first-child {
+    color: #ffff;
+}
+
+.nav__buttons p {
+    color: #aaaaaa;
+}
+
+.nav__buttons {
+    display: flex;
+    justify-content: end;
+    gap: 15px;
+    width: 100%;
+}
+
+.nav__buttons p:last-child {
+    color: #2ea645;
+}
+
+.main-section {
+    height: 70vh;
+    width: 100%;
+    background-image: url("../imagenes_integrador_front/ba1.jpg");
+    color: #ffff;
+}
+
+.overlay {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000000c9;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: end;
+    padding: 50px;
+}
+
+.main-section__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    width: 560px;
+    /* text-align: end; */
+}
+
+.main-section__button__container {
+    margin-top: 15px;
+}
+
+.button_trans {
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: .5px solid #ffff;
+    background-color: #ffffff00;
+    color: #ffff;
+
+}
+
+.button_green {
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #28a745;
+    border: .5px solid #28a745;
+    color: #ffff;
+
+}
+
+.oradores-section {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    height: 100%;
+    width: 100%;
+}
+
+.oradores-section_title-container {
+    color: #23232b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.oradores-section_title-container p {
+    font-size: 15px;
+}
+
+.oradores-section_title-container h2 {
+    font-size: 35px;
+}
+
+.oradores-section__content {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.oradores-section__content img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.oradores-section__card {
+    width: 350px;
+    border: 2px solid #dfdfdf;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.tag-container {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0px;
+}
+
+.tag-container p {
+    padding: 2px 7px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bolder;
+    
+}
+
+.javascript {
+    background-color: #fec107;
+}
+
+.react {
+    background-color: #15a1b8;
+}
+
+.negocios {
+    color: #ffff;
+    background-color: #6c757d;
+}
+
+.startups {
+    background-color: #dc3546;    
+    color: #ffff;
+}
+
+.card-text-container {
+    padding: 10px;
+}
+
+.card-text-container h4 {
+    margin: 5px 0px;
+}
+
+.octubre-section {
+    width: 100%;
+    /* height: 100%; */
+    height: 60vh;
+    background-color: #353a40;
+    display: flex;
+}
+
+.octubre-section__image-container {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.octubre-section__content {
+    
+    width: 50%;
+    color: #ffff;
+    padding: 10px 15px;
+}
+
+.octubre-section__content h4 {
+    font-size: 30px;
+}
+
+.octubre-section__image-container img {
+    width: 100%;
+    height: 100%;
+    border-right: 2px solid #dfdfdf;
+    object-fit: cover;
+}
+
+.form-section {
+    padding-top: 30px;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__datos {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.form__datos input {
+    width: 100%;
+    padding: 5px 3px;
+}
+
+.form__container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 10px;
+}
+
+.form-section p {
+    font-size: 15px;
+}
+.form-section h2 {
+    font-weight: bolder;
+    font-size: 43px;
+}
+
+.form-section textarea {
+    font-size: 30px;
+    height: 200px;
+    resize: none;
+}
+
+.anotate-container {
+    display: flex;
+}
+
+.anotate-container p span {
+    text-decoration:underline;
+  text-decoration-style: dotted;
+}
+
+.button-send {
+    padding-top: 4px;
+    width: 100%;
+    background: #96c93e;
+    color: #ffff;
+    border: none;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.reminder {
+    color: #6c757d;
+}
+
+.footer {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e4f6d;
+    color: #ffff;
+}
+
