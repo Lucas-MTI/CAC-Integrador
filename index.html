@@ -9,7 +9,9 @@
     <title>Document</title>
 </head>
 
+
 <body>
+    <script src="app.js"></script>
     <nav class="nav">
         <div class="nav__logo">
             <img src="./imagenes_integrador_front/codoacodo.png" />
@@ -20,7 +22,7 @@
             <p>Los oradores</p>
             <p>El lugar y la fecha</p>
             <p>Conviértete en orador</p>
-            <p>Comprar tickets</p>
+            <a href="/tickets.html">Comprar tickets</a>
         </div>
     </nav>
 
@@ -114,20 +116,30 @@
     </section>
 
     <section class="form-section">
-        <p>CONVIÉRTETE EN UN</p>
-        <h2>ORADOR</h2>
-        <div class="anotate-container">
-            <p>Anótate como orador para da una <span>charla ignite</span> Cuéntanos de qué quieres hablar!</p>
-        </div>
-
+        <h2 class="valor__subtitulo">VALOR DE TICKET $200</h2>
         <form action="" class="form__container">
             <div class="form__datos">
                 <input class="form__input" type="text" name="nombre" id="nombre" placeholder="Nombre">
-                <input class="form__input" type="text" name="nombre" id="nombre" placeholder="Apellido">
+                <input class="form__input" type="text" name="apellido" id="apellido" placeholder="Apellido">
             </div>
-            <textarea name="" id="" placeholder="Sobre qué quieres hablar?"></textarea>
-            <p class="reminder">Recuerda incluir un título para tu charla</p>
-            <button class="button-send">Enviar</button>
+
+            <input class="form__input-mail" type="email" name="correo" placeholder="Correo">
+
+            <div class="form__cantidad">
+                <div class="cantidad__input">
+                    <p>Cantidad</p>
+                    <input class="form__input" type="text" name="cantidad" id="cantidad" placeholder="Cantidad">
+                </div>
+                <div class="categoria__input">
+                    <p>Categoría</p>
+                    <select name="categoria_select">
+                        <option value="value1">Estudiante</option>
+                        <option value="value2" selected>Estudiante</option>
+                        <option value="value3">Value 3</option>
+                      </select>
+                </div>
+            </div>
+
         </form>
     </section>
     <footer class="footer">

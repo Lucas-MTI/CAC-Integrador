@@ -46,7 +46,8 @@
     width: 100%;
 }
 
-.nav__buttons p:last-child {
+.nav__buttons a {
+    text-decoration: none;
     color: #2ea645;
 }
 
@@ -233,20 +234,44 @@
     display: flex;
     gap: 30px;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 10px;
 }
 
-.form__datos input {
-    width: 100%;
-    padding: 5px 3px;
-}
 
 .form__container {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
+    max-width: 700px;
     gap: 10px;
+}
+
+.form__container input {
+    width: 100%;
+    padding: 10px;
+    border: .2px solid #ced4da;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+.form__cantidad {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.cantidad__input {
+    width: 100%;
+}
+
+.categoria__input {
+    width: 100%;
+}
+
+.categoria__input select {
+    width: 100%;
+    height: 45px;
 }
 
 .form-section p {
@@ -297,3 +322,99 @@
     color: #ffff;
 }
 
+/* Tickets */
+
+.tickets-section {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tickets-section .container {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.planes-card-container {
+}
+
+.plan-card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    height: 180px;
+}
+
+.plan-card span {
+    font-size: 15px;
+    color: #7e7e7e;
+}
+
+.estudiante {
+    border: 2px solid #3395ff;
+}
+
+.trainee {
+    border: 2px solid #17a2b8;
+}
+
+.junior {
+    border: 2px solid #fac629;
+}
+
+.tickets-section span {
+    font-size: 15px;
+    color: #7e7e7e;
+}
+
+.venta {
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+
+.venta_form__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+.cantidad-categoria__container {
+    display: flex;
+    gap: 20px;
+}
+
+.cantidad__input {
+    width: 100%;
+}
+
+.button_resumen {
+    padding: 10px;
+    font-size: 17px;
+    color: #ffff;
+    background-color: #97c93e;
+    border: none;
+    transition: all .1s ease-in;
+    cursor: pointer;
+}
+
+.button_resumen:hover {
+    background-color: #96c93eb0;
+}
+
+.total-a-pagar {
+    background-color: #cce5ff;
+    padding: 15px;
+    color: #003a77;
+    border-radius: 5px;
+}

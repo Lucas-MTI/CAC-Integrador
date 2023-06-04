@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document1</title>
+</head>
+
+
+<body>
+    <nav class="nav">
+        <div class="nav__logo">
+            <img src="./imagenes_integrador_front/codoacodo.png" />
+            <h3>Conf Bs As</h3>
+        </div>
+        <div class="nav__buttons">
+            <p>La conferencia</p>
+            <p>Los oradores</p>
+            <p>El lugar y la fecha</p>
+            <p>Conviértete en orador</p>
+            <a href="#">Comprar tickets</a>
+        </div>
+    </nav>
+
+    <main class="tickets-section">
+        <div class="container">
+            <div class="planes-card-container">
+                <div class="plan-card estudiante">
+                    <h4>Estudiante</h4>
+                    <p>Tienen un descuento</p>
+                    <b>80%</b>
+                    <span>* presentar documentación</span>
+                </div>
+            </div>
+
+
+            <div class="planes-card-container">
+                <div class="plan-card trainee">
+                    <h4>Estudiante</h4>
+                    <p>Tienen un descuento</p>
+                    <b>50%</b>
+                    <span>* presentar documentación</span>
+                </div>
+            </div>
+
+
+            <div class="planes-card-container">
+                <div class="plan-card junior">
+                    <h4>Estudiante</h4>
+                    <p>Tienen un descuento</p>
+                    <b>15%</b>
+                    <span>* presentar documentación</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="venta">
+            <span>VENTA</span>
+            <h2>VALOR DE TICKET $200</h2>
+            <form class="form__container">
+                <div class="form__datos">
+                    <input class="form__input" type="text" name="nombre" id="nombre" placeholder="Nombre">
+                    <input class="form__input" type="text" name="apellido" id="apellido" placeholder="Apellido">
+                </div>
+                <div class="email__input-container">
+                    <input class="form__input" type="text" name="email" id="email" placeholder="Correo">
+                </div>
+
+                <div class="cantidad-categoria__container">
+                    <input class="form__input" type="text" name="cantidad" id="cantidad" placeholder="Cantidad">
+                    <select class="form__input cantidad__input seleccion" name="opciones">
+                        <option value="estudiante" selected>Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Junior</option>
+                      </select>
+                </div>
+
+                <div class="total-a-pagar">
+                    <p class="parrafo-total">Total a pagar: $</p>
+                </div>
+
+                <button class="button_resumen" type="submit">Resumen</button>
+            </form>
+        </div>
+
+
+    </main>
+
+
+    <footer class="footer">
+        <span>Preguntas frecuentes </span>
+        <span>Contáctanos</span>
+        <span>Prensa</span>
+        <span>Conferencias</span>
+        <span>Términos y condiciones</span>
+        <span>Privacidad</span>
+        <span>Estudiantes</span>
+    </footer>
+</body>
+
+<script src="app.js"></script>
+
+</html>
